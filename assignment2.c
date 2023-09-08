@@ -42,3 +42,11 @@ int paintGallons(int length, int width, int height){
     int gallons = surfaceArea / 400;
     return gallons;
 }
+
+void grader(int avg_exams, int avg_hw, int attendance){
+    if(attendance > 20 && avg_exams > 70 && avg_hw > 70 && (avg_exams > 85 || avg_hw > 85 )){
+        printf("PASS");
+    } else{
+        printf("FAIL");
+    }
+}
