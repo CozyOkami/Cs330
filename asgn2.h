@@ -30,7 +30,7 @@ void printHello(int n){
     char hello[n];
     for(int i = 0; i <= n; i++){
         if(i & (i - 1) == 0){
-            hello[i] = "HELLO";
+            hello[i] + "HELLO";
         } else{
             hello[i] = i;
         }
@@ -52,3 +52,6 @@ void grader(int avg_exams, int avg_hw, int attendance){
         printf("FAIL");
     }
 }
+
+
+#endif 
