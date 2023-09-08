@@ -11,4 +11,4 @@ db:
 	gdb -tui $(FILE)
 
 run:
-	./$(FILE)mak
+	./$(FILE)make

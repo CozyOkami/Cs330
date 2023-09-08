@@ -23,7 +23,8 @@ void introToCS330 (int n){
             }
         }
     } else{
-        printf("%s",n*n*n);
+        int cube = n*n*n;
+        printf("%i",cube);
     }
 }
 
