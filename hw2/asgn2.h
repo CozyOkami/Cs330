@@ -30,7 +30,7 @@ void introToCS330 (int n){
 
 void printHello(int n){
     for(int i = 0; i <= n; i++){
-        if(i (& (i - 1)) == 0){
+        if(i & i - 1 == 0){
             printf("%s","HELLO");
         } else{
             printf("%i",i);
