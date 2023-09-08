@@ -34,7 +34,7 @@ int main(){
         printf("please enter length");
         scanf("%d", &length);
         printf("please enter width");
-        scanf("%d", &length);
+        scanf("%d", &width);
         printf("please enter height");
         scanf("%d", &height);
         paintGallons(length, width, height);
