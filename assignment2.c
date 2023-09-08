@@ -23,3 +23,16 @@ void introToCS330 (int n){
         printf(n*n*n);
     }
 }
+
+void printHello(int n){
+    char hello[n];
+    for(int i = 0; i <= n; i++){
+        if(i & (i - 1) == 0){
+            hello[i] = "HELLO";
+        } else{
+            hello[i] = i
+        }
+    } for (int i = 0; i < sizeOf(hello); i++){
+        printf(hello[i]);
+    }
+}
