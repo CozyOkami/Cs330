@@ -4,7 +4,8 @@
 
 void cubeOfodd (int n){
     for(int i = 1; i < n; i += 2 ){
-        printf("%s",i*i*i);
+        int cube = i*i*i;
+        printf("%i",cube);
     }
 }
 

@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include "asgn2.h"
+
 int main(){
     int n;
     int func;
