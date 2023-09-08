@@ -30,7 +30,7 @@ void printHello(int n){
         if(i & (i - 1) == 0){
             hello[i] = "HELLO";
         } else{
-            hello[i] = i
+            hello[i] = i;
         }
     } for (int i = 0; i < sizeOf(hello); i++){
         printf(hello[i]);
