@@ -1,4 +1,6 @@
 #include <stdio.h>
+#ifndef __asgn2__
+#define __asgn2__
 
 void cubeOfodd (int n){
     for(int i = 1; i < n; i += 2 ){
