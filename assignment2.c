@@ -36,3 +36,9 @@ void printHello(int n){
         printf(hello[i]);
     }
 }
+
+int paintGallons(int length, int width, int height){
+    int surfaceArea = 2*(width*length + height*length +height*width);
+    int gallons = surfaceArea / 400;
+    return gallons;
+}
