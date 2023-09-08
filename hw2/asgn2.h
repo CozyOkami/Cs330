@@ -31,13 +31,13 @@ void introToCS330 (int n){
 void printHello(int n){
     char hello[n];
     for(int i = 0; i <= n; i++){
-        if(i & (i - 1) == 0){
+        if(i & ((i - 1)) == 0){
             hello[i] + "HELLO";
         } else{
             hello[i] = i;
         }
     } for (int i = 0; i < sizeof(hello); i++){
-        printf("%s",hello[i]);
+        printf("%i",hello[i]);
     }
 }
 
