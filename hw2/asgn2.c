@@ -12,10 +12,10 @@ int main(){
     int attendance;
 
     printf("which function would you like to run?");
-    printf("1 for cubeOfodd /n");
-    printf("2 for introToCS330/n");
-    printf("3 for printHello/n");
-    printf("4 for paintGallons/n");
+    printf("1 for cubeOfodd ");
+    printf("2 for introToCS330");
+    printf("3 for printHello");
+    printf("4 for paintGallons");
     printf("5 for grader");
     scanf("%d", &func);
     if(scanf("%d", &func) == 1){
