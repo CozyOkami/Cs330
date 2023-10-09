@@ -90,10 +90,10 @@ int convertBinToDec(int *binaryArray) {
 }
 
 int* convertDecToHex(int decimal) {
-    // Allocate memory for the hexadecimal array
+    // Allocate memory for the hex array
     int* hexArray = malloc(NUMBER_OF_HEX_DIGITS * sizeof(int));
     
-    // Initialize the hexadecimal array elements to 0
+    // Initialize the hex array elements to 0
     for (int i = 0; i < NUMBER_OF_HEX_DIGITS; i++) {
         *(hexArray + i ) = 0;
     }
@@ -101,15 +101,26 @@ int* convertDecToHex(int decimal) {
     // Convert decimal to hexadecimal
     int i = NUMBER_OF_HEX_DIGITS - 1;
     while (decimal > 0 && i >= 0) {
-        *(hexArray + i) = decimal % 16; // Get the remainder as the hexadecimal digit
-        decimal /= 16; // Divide by 16 to move to the next hexadecimal digit
+        *(hexArray + i) = decimal % 16; // Get the remainder as the hex digit
+        decimal /= 16; // Divide by 16 to move to the next digit
         i--;
     }
 
     return hexArray;
 }
 
+int convertHexToDec(int *hexArray) {
+    int decimal = 0;
+    int power = 1; // Initialize the power of 16
 
+    // Loop through the hex array from right to left
+    for (int i = NUMBER_OF_HEX_DIGITS - 1; i >= 0; i--) {
+        decimal += (*(hexArray + i) * power);
+        power *= 16; // Multiply by 16 for each hex digit position
+    }
+
+    return decimal;
+}
 
 
 #endif
