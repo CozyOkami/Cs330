@@ -56,6 +56,16 @@ int* reverseMyArrayPlease(int size, int *myArray) {
 /* Note: main() goes in the asgn4.c file */
 
 
+/*   This function converts a decimal integer into a binary array. 
+   It takes an integer decimal as input and returns a dynamically allocated 
+   array of integers representing the binary representation of the decimal number.
+   
+   Input:
+   - decimal: The decimal integer to be converted.
+   
+   Output:
+   - Returns a pointer to the binary array.
+*/
 int* convertDecToBin(int decimal) {
     // Allocate memory for the binary array
     int* binaryArray = malloc(NUMBER_OF_BITS * sizeof(int));
@@ -75,7 +85,17 @@ int* convertDecToBin(int decimal) {
 
     return binaryArray;
 }
-
+/*
+   This function converts a binary array into a decimal integer. 
+   It takes an integer array binaryArray as input, where each element represents 
+   one binary bit, and returns the decimal equivalent.
+   
+   Input:
+   - binaryArray: An array of integers representing a binary number.
+   
+   Output:
+   - Returns the decimal equivalent of the binary number.
+*/
 int convertBinToDec(int *binaryArray) {
     int decimal = 0;
     int power = 1; // Initialize the power of 2
@@ -88,7 +108,17 @@ int convertBinToDec(int *binaryArray) {
 
     return decimal;
 }
-
+/*
+   This function converts a decimal integer into a hexadecimal array. 
+   It takes an integer decimal as input and returns a dynamically allocated 
+   array of integers representing the hexadecimal representation of the decimal number.
+   
+   Input:
+   - decimal: The decimal integer to be converted.
+   
+   Output:
+   - Returns a pointer to the hexadecimal array.
+*/
 int* convertDecToHex(int decimal) {
     // Allocate memory for the hex array
     int* hexArray = malloc(NUMBER_OF_HEX_DIGITS * sizeof(int));
@@ -108,7 +138,17 @@ int* convertDecToHex(int decimal) {
 
     return hexArray;
 }
-
+/*
+   This function converts a hexadecimal array into a decimal integer. 
+   It takes an integer array hexArray as input, where each element represents 
+   one hexadecimal digit, and returns the decimal equivalent.
+   
+   Input:
+   - hexArray: An array of integers representing a hexadecimal number.
+   
+   Output:
+   - Returns the decimal equivalent of the hexadecimal number.
+*/
 int convertHexToDec(int *hexArray) {
     int decimal = 0;
     int power = 1; // Initialize the power of 16
