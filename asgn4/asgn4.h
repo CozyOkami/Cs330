@@ -58,7 +58,7 @@ int* reverseMyArrayPlease(int size, int *myArray) {
 
 int* convertDecToBin(int decimal) {
     // Allocate memory for the binary array
-    int* binaryArray = malloc(NUMBER_OF_BITS * sizeof(int);
+    int* binaryArray = malloc(NUMBER_OF_BITS * sizeof(int));
 
     // Initialize the binary array elements to 0
     for (int i = 0; i < NUMBER_OF_BITS; i++) {
