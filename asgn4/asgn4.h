@@ -89,6 +89,27 @@ int convertBinToDec(int *binaryArray) {
     return decimal;
 }
 
+int* convertDecToHex(int decimal) {
+    // Allocate memory for the hexadecimal array
+    int* hexArray = malloc(NUMBER_OF_HEX_DIGITS * sizeof(int));
+    
+    // Initialize the hexadecimal array elements to 0
+    for (int i = 0; i < NUMBER_OF_HEX_DIGITS; i++) {
+        *(hexArray + i ) = 0;
+    }
+
+    // Convert decimal to hexadecimal
+    int i = NUMBER_OF_HEX_DIGITS - 1;
+    while (decimal > 0 && i >= 0) {
+        *(hexArray + i) = decimal % 16; // Get the remainder as the hexadecimal digit
+        decimal /= 16; // Divide by 16 to move to the next hexadecimal digit
+        i--;
+    }
+
+    return hexArray;
+}
+
+
 
 
 #endif
