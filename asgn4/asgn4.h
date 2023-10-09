@@ -122,5 +122,9 @@ int convertHexToDec(int *hexArray) {
     return decimal;
 }
 
+int* convertDecToBin(int decimal);
+int convertBinToDec(int* binaryArray);
+int* convertDecToHex(int decimal);
+int convertHexToDec(int* hexArray);
 
 #endif
