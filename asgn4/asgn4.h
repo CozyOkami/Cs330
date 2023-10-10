@@ -56,8 +56,7 @@ int* reverseMyArrayPlease(int size, int *myArray) {
 /* Note: main() goes in the asgn4.c file */
 
 
-/*   This function converts a decimal integer into a binary array. 
-   It takes an integer decimal as input and returns a dynamically allocated 
+/*   This function converts an int decimal into a binary array and returns a dynamically allocated 
    array of integers representing the binary representation of the decimal number.
    
    Input:
@@ -87,7 +86,7 @@ int* convertDecToBin(int decimal) {
 }
 /*
    This function converts a binary array into a decimal integer. 
-   It takes an integer array binaryArray as input, where each element represents 
+   It takes a pointer to the array binaryArray as input, where each element represents 
    one binary bit, and returns the decimal equivalent.
    
    Input:
@@ -109,7 +108,7 @@ int convertBinToDec(int *binaryArray) {
     return decimal;
 }
 /*
-   This function converts a decimal integer into a hexadecimal array. 
+   This function converts a decimal integer into an array that represents a hexadecimal number. 
    It takes an integer decimal as input and returns a dynamically allocated 
    array of integers representing the hexadecimal representation of the decimal number.
    
