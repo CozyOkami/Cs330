@@ -25,8 +25,7 @@ int atoi_cs330(const char *str) {
             result = result * 10 + (str[i] - '0');
         } else {
             // Handle non-numeric characters
-            // You can add more error handling if needed
-            printf("Invalid character in the input: %c\n", str[i]);
+            printf("Invalid character: %c\n", str[i]);
             return 0;
         }
         i++;
@@ -38,10 +37,6 @@ int atoi_cs330(const char *str) {
 char *itoa_cs330(int num) {
     if (num == 0) {
         char *str = (char *)malloc(1 * sizeof(char));
-        if (str == NULL) {
-            // Memory allocation failed, handle the error
-            return NULL;
-        }
         str[0] = '\0';
         return str;
     }
@@ -61,10 +56,6 @@ char *itoa_cs330(int num) {
     }
 
     char *str = (char *)malloc((num_digits + is_negative + 1) * sizeof(char));
-    if (str == NULL) {
-        // Memory allocation failed, handle the error
-        return NULL;
-    }
 
     if (is_negative) {
         str[0] = '-';
